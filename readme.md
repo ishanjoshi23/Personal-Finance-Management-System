@@ -37,6 +37,7 @@ On the "Add Money To Account" page, a user can enter any income they have.
 This type of transaction is automatically given the name "Income" and the date field is automatically inserted according to Greenwich Mean Time.
 If the amount field is incorrectly entered, the user is again prompted to enter a correct transaction.
 
-<hr>
-Feel free to try this out! Let me know if you have any suggestions. I am open to feedback and making improvements :)
+<hr />
+Feel free to try this out! Let me know if you have any suggestions. I am open to feedback and making improvements.
+<br />
 This is my first project attempt at backend/frontend programming.

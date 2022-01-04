@@ -10,7 +10,7 @@ The following languages and technologies are used in this project:
 * SQL
 
 **Front end:**
-* HTM
+* HTML
 * CSS
 * JavaScript
 

@@ -39,5 +39,3 @@ If the amount field is incorrectly entered, the user is again prompted to enter 
 
 <hr />
 Feel free to try this out! Let me know if you have any suggestions. I am open to feedback and making improvements.
-<br />
-This is my first project attempt at backend/frontend programming.

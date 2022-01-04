@@ -1,0 +1,30 @@
+<!-- login.html is the login page where a user can log in to their account -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <main class="large text-center">
+        <h3><em>Welcome Back! Login Below or Register!</em></h3>
+
+    </main>
+
+    <br>
+
+    <!-- login form -->
+    <form action="/login" method="post">
+        <h6>Enter username:</h6>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+        <h6>Enter password:</h6>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+        <br>
+        <button class="btn btn-dark" type="submit">Log In</button>
+    </form>
+{% endblock %}

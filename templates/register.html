@@ -1,0 +1,38 @@
+<!-- register.html is the register page where a user can create a new account -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <main class="large text-center">
+        <h3><em>Welcome! Register Here to Manage Your Finances Today!</em></h3>
+        <h5>Your account starts with a balance of $10,000</h5>
+
+    </main>
+
+    <br>
+    <br>
+
+    <!-- register form -->
+    <form action="/register" method="post">
+        <h6>Enter desired username:</h6>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+        </div>
+
+        <h6>Enter desired password:</h6>
+        <div class="form-group">
+            <input class="form-control" name="password" placeholder="Password" type="password">
+        </div>
+
+        <h6>Enter password again to confirm:</h6>
+        <div class="form-group">
+            <input class="form-control" name="confirmation" placeholder="Password Again" type="password">
+        </div>
+        <br>
+        <button class="btn btn-dark" type="submit">Register</button>
+    </form>
+{% endblock %}

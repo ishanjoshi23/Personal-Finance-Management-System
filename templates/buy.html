@@ -1,0 +1,29 @@
+<!-- buy.html is the buy page where a user can add/log a transaction (spending) to their account -->
+
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+
+    <h3>Add transaction below:</h3>
+    <br>
+    
+    <!-- Enter transaction form -->
+    <form action="/buy" method="post">
+        <div class="form-group">
+            <input autocomplete="off" placeholder="Name" class="form-control" autofocus name="symbol" type="text">
+        </div>
+        <div class="form-group">
+            <i>$</i>
+            <input autocomplete="off" step="0.01" placeholder="Amount" min="0.01" class="form-control" name="shares" type="number" style="width: 190px">
+
+        </div>
+
+        <br>
+        <button class="btn btn-primary" type="submit">Add Transaction to Profile</button>
+    </form>
+    
+{% endblock %}

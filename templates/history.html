@@ -1,0 +1,49 @@
+<!-- history.html is the history page where a user can view their account history (income, spending, etc) -->
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+
+    <h2>Welcome!</h2>
+    <h3>View your finances below!</h3>
+    <br>
+
+
+    <h4>Your Account Balance: <em>${{cash1}}</em></h4>
+    <br>
+
+    <br>
+    <h5>Note: Any Money Added is Noted as Income</h5>
+    <br>
+    <br>
+    
+    <!-- History table -->
+    <table align="center" class="table table-striped" style="width: 100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Date Added</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            {% for transaction in transactions %}
+            <tr>
+                <td>{{transaction["symbol"]}}</td>
+                <td>{{transaction["shares"]}}</td>
+                <td>{{transaction["transacted"]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+
+
+    </table>
+
+
+{% endblock %}
